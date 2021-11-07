@@ -7,12 +7,13 @@
     <version>1.1-SNAPSHOT</version>
 
     <scm>
-          <developerConnection>scm:git:https://github.com/pmamico/koi-backend.git</developerConnection>
+          <developerConnection>scm:git:https://github.com/pmamico/hanafuda-lib.git</developerConnection>
     </scm>
     <properties>
         <sonar.organization>pmamico</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
