@@ -5,10 +5,10 @@ import hu.pmamico.game.koi.card.HanafudaCardType;
 import hu.pmamico.game.koi.card.PlayingCard;
 
 public class Butterflies extends PlayingCard implements IPlayingCardSpecial {
-    public static final String name = "Butterflies";
+    public static final String NAME = "Butterflies";
 
     public Butterflies(){
-        super(HanafudaCardSuit.BOTAN, HanafudaCardType.ANIMAL, name);
+        super(HanafudaCardSuit.BOTAN, HanafudaCardType.ANIMAL, NAME);
     }
 
 }

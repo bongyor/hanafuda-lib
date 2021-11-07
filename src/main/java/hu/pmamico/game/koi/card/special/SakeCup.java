@@ -5,10 +5,10 @@ import hu.pmamico.game.koi.card.HanafudaCardType;
 import hu.pmamico.game.koi.card.PlayingCard;
 
 public class SakeCup extends PlayingCard implements IPlayingCardSpecial {
-    public static final String name = "Poetry Sake Cup";
+    public static final String NAME = "Poetry Sake Cup";
 
     public SakeCup(){
-        super(HanafudaCardSuit.KIKU, HanafudaCardType.ANIMAL, name);
+        super(HanafudaCardSuit.KIKU, HanafudaCardType.ANIMAL, NAME);
     }
 
     @Override

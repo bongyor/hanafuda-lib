@@ -5,10 +5,10 @@ import hu.pmamico.game.koi.card.HanafudaCardType;
 import hu.pmamico.game.koi.card.PlayingCard;
 
 public class Crane extends PlayingCard implements IPlayingCardSpecial {
-    public static final String name = "Crane and Sun";
+    public static final String NAME = "Crane and Sun";
 
     public Crane(){
-        super(HanafudaCardSuit.MATSU, HanafudaCardType.ANIMAL, name);
+        super(HanafudaCardSuit.MATSU, HanafudaCardType.ANIMAL, NAME);
     }
 
 }

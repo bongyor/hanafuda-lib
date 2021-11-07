@@ -9,6 +9,6 @@ public class HanafudaCardTypeComparator implements Comparator<HanafudaCardType> 
         if(o1.isRibbon() && o2.isRibbon()){
             return o1.getName().compareTo(o2.getName());
         }
-        return o1.getValue() > o2.getValue() ? +1 : o1.getValue() < o2.getValue() ? -1 : 0;
+        return Integer.compare(o1.getValue(), o2.getValue());
     }
 }

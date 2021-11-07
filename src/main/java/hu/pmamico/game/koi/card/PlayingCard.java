@@ -12,20 +12,21 @@ public class PlayingCard implements Comparable<PlayingCard>, Serializable {
 
     protected HanafudaCardSuit suit;
     protected HanafudaCardType type;
-    protected String name;
+    protected String label;
 
     private static final PlayingCardComparator comparator = new PlayingCardComparator();
 
     /**
      * constructor for special cards
+     *
      * @param suit
      * @param type
-     * @param name
+     * @param label
      */
-    public PlayingCard(HanafudaCardSuit suit, HanafudaCardType type, String name) {
+    public PlayingCard(HanafudaCardSuit suit, HanafudaCardType type, String label) {
         this.suit = suit;
         this.type = type;
-        this.name = name;
+        this.label = label;
     }
 
     /**
@@ -35,7 +36,7 @@ public class PlayingCard implements Comparable<PlayingCard>, Serializable {
     public PlayingCard(HanafudaCardSuit suit){
         this.suit = suit;
         this.type = HanafudaCardType.PLAIN;
-        this.name = DEFAULT_CARD_NAME;
+        this.label = DEFAULT_CARD_NAME;
     }
 
     /**
@@ -77,13 +78,13 @@ public class PlayingCard implements Comparable<PlayingCard>, Serializable {
         PlayingCard that = (PlayingCard) o;
         return suit == that.suit &&
                 type == that.type &&
-                Objects.equals(name, that.name);
+                Objects.equals(label, that.label);
     }
 
     @Override
     @ExcludeFromJacocoGeneratedReport
     public int hashCode() {
-        return Objects.hash(suit, type, name);
+        return Objects.hash(suit, type, label);
     }
 
     public static final String DEFAULT_CARD_NAME = "Plain";
@@ -99,7 +100,7 @@ public class PlayingCard implements Comparable<PlayingCard>, Serializable {
         return "{" +
                 "" + suit.name() +
                 "-" + type.name() +
-                "(" + name + ')' +
+                "(" + label + ')' +
                 '}';
     }
 }

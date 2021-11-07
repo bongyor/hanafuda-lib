@@ -90,17 +90,12 @@ public class DeckFactory {
     public static List<PlayingCard> filter(List<PlayingCard> stack, CardFilter filter, HanafudaCardSuit suit){
         List<PlayingCard> ret = new ArrayList<>();
         for(PlayingCard card : stack){
-            if(filter.equals(CardFilter.EQUAL) && card.getSuit().equals(suit)){
-                ret.add(card);
-            }else if(filter.equals(CardFilter.NOT_EQUAL) && !card.getSuit().equals(suit)) {
-                ret.add(card);
-            }else if(filter.equals(CardFilter.GREATER) && card.getSuit().compareTo(suit)>0) {
-                ret.add(card);
-            }else if(filter.equals(CardFilter.NOT_GREATER) && card.getSuit().compareTo(suit)<1) {
-                ret.add(card);
-            }else if(filter.equals(CardFilter.SMALLER) && card.getSuit().compareTo(suit)<0) {
-                ret.add(card);
-            }else if(filter.equals(CardFilter.NOT_SMALLER) && card.getSuit().compareTo(suit)>-1) {
+            if (filter.equals(CardFilter.EQUAL) && card.getSuit().equals(suit)
+                    || filter.equals(CardFilter.NOT_EQUAL) && !card.getSuit().equals(suit)
+                    || filter.equals(CardFilter.GREATER) && card.getSuit().compareTo(suit) > 0
+                    || filter.equals(CardFilter.NOT_GREATER) && card.getSuit().compareTo(suit) < 1
+                    || filter.equals(CardFilter.SMALLER) && card.getSuit().compareTo(suit) < 0
+                    || filter.equals(CardFilter.NOT_SMALLER) && card.getSuit().compareTo(suit) > -1) {
                 ret.add(card);
             }
         }
@@ -110,18 +105,13 @@ public class DeckFactory {
 
     public static List<PlayingCard> filter(List<PlayingCard> stack, CardFilter filter, HanafudaCardType type){
         List<PlayingCard> ret = new ArrayList<>();
-        for(PlayingCard card : stack){
-            if(filter.equals(CardFilter.EQUAL) && card.getType().equals(type)){
-                ret.add(card);
-            }else if(filter.equals(CardFilter.NOT_EQUAL) && !card.getType().equals(type)) {
-                ret.add(card);
-            }else if(filter.equals(CardFilter.GREATER) && card.getType().compareTo(type)>0) {
-                ret.add(card);
-            }else if(filter.equals(CardFilter.NOT_GREATER) && card.getType().compareTo(type)<1) {
-                ret.add(card);
-            }else if(filter.equals(CardFilter.SMALLER) && card.getType().compareTo(type)<0) {
-                ret.add(card);
-            }else if(filter.equals(CardFilter.NOT_SMALLER) && card.getType().compareTo(type)>-1) {
+        for(PlayingCard card : stack) {
+            if (filter.equals(CardFilter.EQUAL) && card.getType().equals(type)
+                    || filter.equals(CardFilter.NOT_EQUAL) && !card.getType().equals(type)
+                    || filter.equals(CardFilter.GREATER) && card.getType().compareTo(type) > 0
+                    || filter.equals(CardFilter.NOT_GREATER) && card.getType().compareTo(type) < 1
+                    || filter.equals(CardFilter.SMALLER) && card.getType().compareTo(type) < 0
+                    || filter.equals(CardFilter.NOT_SMALLER) && card.getType().compareTo(type) > -1) {
                 ret.add(card);
             }
         }

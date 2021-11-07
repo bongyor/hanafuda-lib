@@ -5,10 +5,10 @@ import hu.pmamico.game.koi.card.HanafudaCardType;
 import hu.pmamico.game.koi.card.PlayingCard;
 
 public class BushWarbler extends PlayingCard implements IPlayingCardSpecial {
-    public static final String name = "Bush-warbler in a Tree";
+    public static final String NAME = "Bush-warbler in a Tree";
 
     public BushWarbler(){
-        super(HanafudaCardSuit.UME, HanafudaCardType.ANIMAL, name);
+        super(HanafudaCardSuit.UME, HanafudaCardType.ANIMAL, NAME);
     }
     
 }

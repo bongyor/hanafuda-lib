@@ -5,10 +5,10 @@ import hu.pmamico.game.koi.card.HanafudaCardType;
 import hu.pmamico.game.koi.card.PlayingCard;
 
 public class Deer extends PlayingCard implements IPlayingCardSpecial {
-    public static final String name = "Deer and Maple";
+    public static final String NAME = "Deer and Maple";
 
     public Deer(){
-        super(HanafudaCardSuit.MOMIJI, HanafudaCardType.ANIMAL, name);
+        super(HanafudaCardSuit.MOMIJI, HanafudaCardType.ANIMAL, NAME);
     }
 
 }

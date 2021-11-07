@@ -5,10 +5,10 @@ import hu.pmamico.game.koi.card.HanafudaCardType;
 import hu.pmamico.game.koi.card.PlayingCard;
 
 public class Swallow extends PlayingCard implements IPlayingCardSpecial {
-    public static final String name = "Swallow";
+    public static final String NAME = "Swallow";
 
     public Swallow(){
-        super(HanafudaCardSuit.YANAGI, HanafudaCardType.ANIMAL, name);
+        super(HanafudaCardSuit.YANAGI, HanafudaCardType.ANIMAL, NAME);
     }
     
 }
