@@ -5,7 +5,7 @@
 
 <div align="center">
   <a href="https://github.com/pmamico/hanafuda-lib">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo">
   </a>
 
   <h3 align="center">Hanafuda Lib</h3>
