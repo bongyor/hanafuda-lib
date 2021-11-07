@@ -1,7 +1,11 @@
 <div id="top"></div>
 
 ![Coverage](.github/badges/jacoco.svg)
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=pmamico_hanafuda-lib)](https://sonarcloud.io/summary/new_code?id=pmamico_hanafuda-lib)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pmamico_hanafuda-lib&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=pmamico_hanafuda-lib)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=pmamico_hanafuda-lib&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=pmamico_hanafuda-lib)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=pmamico_hanafuda-lib&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=pmamico_hanafuda-lib)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=pmamico_hanafuda-lib&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=pmamico_hanafuda-lib)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=pmamico_hanafuda-lib&metric=bugs)](https://sonarcloud.io/summary/new_code?id=pmamico_hanafuda-lib)
 
 <div align="center">
   <a href="https://github.com/pmamico/hanafuda-lib">
