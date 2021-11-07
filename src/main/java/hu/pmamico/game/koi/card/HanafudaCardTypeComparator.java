@@ -1,0 +1,14 @@
+package hu.pmamico.game.koi.card;
+
+import java.util.Comparator;
+
+public class HanafudaCardTypeComparator implements Comparator<HanafudaCardType> {
+
+    @Override
+    public int compare(HanafudaCardType o1, HanafudaCardType o2) {
+        if(o1.isRibbon() && o2.isRibbon()){
+            return o1.getName().compareTo(o2.getName());
+        }
+        return o1.getValue() > o2.getValue() ? +1 : o1.getValue() < o2.getValue() ? -1 : 0;
+    }
+}
