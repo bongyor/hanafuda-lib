@@ -2,14 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>hu.pmamico.cards</groupId>
-    <artifactId>koi-backend</artifactId>
+    <groupId>hu.pmamico</groupId>
+    <artifactId>hanafuda-lib</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <scm>
           <developerConnection>scm:git:https://github.com/pmamico/koi-backend.git</developerConnection>
-          <tag>koi-backend-1.0</tag>
     </scm>
+    <properties>
+        <sonar.organization>pmamico</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
@@ -18,9 +21,7 @@
             <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
