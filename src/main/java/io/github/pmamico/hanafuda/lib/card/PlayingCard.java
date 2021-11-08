@@ -15,36 +15,19 @@ public class PlayingCard implements Comparable<PlayingCard>, Serializable {
     protected String label;
 
     private static final PlayingCardComparator comparator = new PlayingCardComparator();
-
-    /**
-     * constructor for special cards
-     *
-     * @param suit
-     * @param type
-     * @param label
-     */
+    
     public PlayingCard(HanafudaCardSuit suit, HanafudaCardType type, String label) {
         this.suit = suit;
         this.type = type;
         this.label = label;
     }
 
-    /**
-     * constructor for kasu cards
-     * @param suit
-     */
     public PlayingCard(HanafudaCardSuit suit){
         this.suit = suit;
         this.type = HanafudaCardType.PLAIN;
         this.label = DEFAULT_CARD_NAME;
     }
 
-    /**
-     * multiple card create
-     * @param suit
-     * @param n
-     * @return
-     */
     public static List<PlayingCard> plainCards(HanafudaCardSuit suit, int n){
         List<PlayingCard> stackOfCards = new ArrayList<>();
 
