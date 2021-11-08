@@ -4,7 +4,7 @@
 
     <groupId>io.github.pmamico</groupId>
     <artifactId>hanafuda-lib</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Hanafuda deck library</description>
@@ -21,7 +21,7 @@
         <developerConnection>scm:git:https://github.com/pmamico/hanafuda-lib.git</developerConnection>
         <connection>scm:git:git://github.com/pmamico/hanafuda-lib.git</connection>
         <url>https://github.com/pmamico/hanafuda-lib/releases/tag/v1.0</url>
-      <tag>HEAD</tag>
+      <tag>hanafuda-lib-0.1</tag>
   </scm>
 
     <developers>
