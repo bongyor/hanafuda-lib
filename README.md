@@ -147,14 +147,37 @@ Mico Papp - papp.mico@gmail.com
 <!-- about-hanafuda -->
 ## What is Hanafuda?
 
-Hanafuda or “flower cards” are a style of Japanese playing cards with some Portuguese backgrounds from the mid-16th century.  
-The system of the deck is a little bit different from French-suited or Bavarian pattern decks that make the card intersting.  
+Hanafuda or “flower cards” are a style of Japanese playing cards with some Portuguese backgrounds from the mid-16th century.   
+Fun fact Nintendo originally produced handmade hanafuda playing cards in 1889.  
+The system of the deck is different from French-suited or Bavarian pattern decks that makes the card intersting.  
 A Hanafuda deck contains 48 cards in 12 suits, 4 card each suit.  
-Suits represented with characteristic flowers in the 12 months, eg. the "march" suit represented with cherry blossom.  
+Suits represented with characteristic flowers of the 12 months, eg. the "march" suit represented with cherry blossom.  
 Each card has a "type" or "value" also, that can be "Plain", "Animal", "Ribbon", "Poetry ribbon", "Blue ribbon" or the most valuable type "Brigth".   
-Not all the suits has a "Bright" card or "Ribbon", which makes the deck asymmetric.  (there are 4 cards per suit, but there are 6 values)    
-A typical game with Hanafuda cards called Koi-Koi where you need to matching pairs with suits but you earn points for making groups by type.  
-You can check the actual rules here: [Hanafuda Rules](https://www.gamedesign.jp/flash/hanafuda/rule_e.html)
+Not all the suits has all value card which makes the deck asymmetric.  (there are 4 cards per suit, but there are 6 values)  
+For example the February suited cards:  
+<table>
+   <tr>
+     <td></td>
+     <td><img src=".github/images/logo.png" width="60"></td>
+     <td><img src=".github/images/plum_blossom_poetry.png" width="60"></td>
+     <td><img src=".github/images/plum_blossom_kasu_1.png" width="60"></td>
+     <td><img src=".github/images/plum_blossom_kasu_2.png" width="60"></td>
+  </tr>
+  <tr>
+    <td>suit</td>
+    <td colspan="4">plum blossom or february; suited cards illustrates the same flower</td>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>animal</td>
+    <td>poetry ribbon</td>
+    <td>plain</td>
+    <td>plain</td>
+  </tr>
+</table>
+
+A typical game with Hanafuda cards called Koi-Koi where you match pairs by suit but you earn points for making combinations by type.  
+You can check the actual rules here: [Hanafuda Rules](https://www.gamedesign.jp/flash/hanafuda/rule_e.html)  
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
