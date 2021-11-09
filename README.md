@@ -46,6 +46,56 @@ This is a library that represents a traditional [hanafuda deck](https://en.wikip
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- USAGE -->
+## Usage
+
+### Import with maven
+```xml
+<dependency>
+    <groupId>io.github.pmamico</groupId>
+    <artifactId>hanafuda-lib</artifactId>
+    <version>1.0</version>
+</dependency>
+```
+### Deck
+```java
+HanafudaDeck deck = new HanafudaDeck();
+deck.shuffle();
+PlayingCard cardFromTop = deck.draw();
+```
+A newly constructed ```HanafudaDeck``` contains all the 48 playing cards.
+### Suits
+Suits represented by ```HanafudaCardSuit``` enum  
+Basically the suits are the 12 months.   
+However it is supported to use flower names as aliases in english and romaji also.
+e.g. the January suit is represented as ```HanafudaCardSuit.JAN```, ```HanafudaCardSuit.PINE``` or ```HanafudaCardSuit.MATSU```  
+You can use the naming according to your taste!
+
+### Values 
+Values represented by ```HanafudaCardType``` enum.  
+Values are ```PLAIN```, ```RIBBON```, ```BLUE_RIBBON```, ```POETRY_RIBBON```, ```ANIMAL``` and ```BRIGHT```
+
+### PlayingCard
+Cards represented by ```PlayingCard``` class having properties above:  
+* a ```HanafudaCardSuit``` 
+* a ```HanafudaCardType```
+* a ```label``` (String)
+
+### Special cards
+All special cards that has unique name or role has an own class (that extends PlayingCard).  
+For example "Full moon" is one of the bright cards and represented with ```FullMoon``` class so you can easily check against that or create it:
+```java
+//check if card is a full moon card
+PlayingCard card = new HanafudaDeck().draw();
+if(card instanceof FullMoon){
+  ...
+}
+
+//or create a FullMoon card
+PlayingCard fullMoon = new FullMoon();
+```
+Each special cards has a label, for example the FullMoon's label is "Full Moon with Red Sky".
+
 <!-- ROADMAP -->
 ## Roadmap
 
