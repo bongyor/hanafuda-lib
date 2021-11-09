@@ -147,7 +147,14 @@ Mico Papp - papp.mico@gmail.com
 <!-- about-hanafuda -->
 ## What is Hanafuda?
 
-* [Hanafuda Rules](https://www.gamedesign.jp/flash/hanafuda/rule_e.html)
+Hanafuda or “flower cards” are a style of Japanese playing cards with some Portuguese backgrounds from the mid-16th century.  
+The system of the deck is a little bit different from French-suited or Bavarian pattern decks that make the card intersting.  
+A Hanafuda deck contains 48 cards in 12 suits, 4 card each suit.  
+Suits represented with characteristic flowers in the 12 months, eg. the "march" suit represented with cherry blossom.  
+Each card has a "type" or "value" also, that can be "Plain", "Animal", "Ribbon", "Poetry ribbon", "Blue ribbon" or the most valuable type "Brigth".  
+Not all the suits has a "Bright" card or "Ribbon", which makes the deck asymmetric.  (there are 4 cards per suit, but there are 6 values)  
+A typical game with Hanafuda cards called Koi-Koi where you need to matching pairs with suits but you earn points for making groups by type.
+You can check the actual rules here: [Hanafuda Rules](https://www.gamedesign.jp/flash/hanafuda/rule_e.html)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
