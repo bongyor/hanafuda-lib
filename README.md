@@ -15,8 +15,10 @@
   <h3 align="center">Hanafuda Lib</h3>
 
   <p align="center">
-    A java library for Hanafuda cards.
+    A java library for Hanafuda cards.<br/ > 
+    
   </p>
+  <font size="1">But <a href="#what-is-hanafuda">what is Hanafuda?</a></font>
 </div>
 
 
