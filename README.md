@@ -16,9 +16,9 @@
 
   <p align="center">
     A java library for Hanafuda cards.<br/ > 
-    
+    <font size="1">But <a href="#what-is-hanafuda">what is Hanafuda?</a></font>
   </p>
-  <font size="1">But <a href="#what-is-hanafuda">what is Hanafuda?</a></font>
+  
 </div>
 
 
@@ -33,9 +33,9 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#what-is-hanafuda">What is Hanafuda?</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#what-is-hanafuda">What is Hanafuda?</a></li>
   </ol>
 </details>
 
@@ -122,28 +122,6 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Mico Papp - papp.mico@gmail.com
-
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- about-hanafuda -->
 ## What is Hanafuda?
 
@@ -179,6 +157,20 @@ For example the February suited cards:
 A typical game with Hanafuda cards called Koi-Koi where you match pairs by suit but you earn points for making combinations by type.  
 You can check the actual rules here: [Hanafuda Rules](https://www.gamedesign.jp/flash/hanafuda/rule_e.html)  
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Mico Papp - papp.mico@gmail.com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
