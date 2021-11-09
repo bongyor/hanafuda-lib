@@ -148,7 +148,7 @@ For example the February suited cards:
   <tr>
     <td>type</td>
     <td>animal</td>
-    <td>poetry ribbon</td>
+    <td>poetry <br/>ribbon</td>
     <td>plain</td>
     <td>plain</td>
   </tr>
