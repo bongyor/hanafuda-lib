@@ -143,7 +143,7 @@ For example the February suited cards:
   </tr>
   <tr>
     <td>suit</td>
-    <td colspan="4">plum blossom or february; suited cards illustrates the same flower</td>
+    <td colspan="4"><strong>plum blossom</strong> or february; suited cards illustrates the same flower</td>
   </tr>
   <tr>
     <td>type</td>
