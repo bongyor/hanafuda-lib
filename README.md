@@ -131,7 +131,7 @@ The system of the deck is different from French-suited or Bavarian pattern decks
 A Hanafuda deck contains 48 cards in 12 suits, 4 cards each suit.  
 Suits represented by characteristic flowers of the 12 months, eg. the "march" suit represented by cherry blossom.  
 Each card has a "type" or "value" also, that can be "Plain", "Animal", "Ribbon", "Poetry ribbon", "Blue ribbon" or the most valuable type "Bright".   
-Not all the suits has all value card which makes the deck asymmetric.  (there are 4 cards per suit, but there are 6 values)  
+Not all the suits have all value card which makes the deck asymmetric.  (there are 4 cards per suit, but there are 6 values)  
 For example the February suited cards:  
 <table>
    <tr>
