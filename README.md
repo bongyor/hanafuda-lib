@@ -155,7 +155,8 @@ For example the February suited cards:
 </table>
 All cards <a href="https://www.gamedesign.jp/flash/hanafuda/fuda2.png">here</a>.<br/ >
 <br/ >
-A typical game with Hanafuda cards called Koi-Koi where you match pairs by suit but you earn points for making combinations by type.<br/ >
+A typical game with Hanafuda cards called Koi-Koi <br/ >
+where you match pairs by suit but you earn points for making combinations by type.<br/ >
 You can check the actual rules here: <a href="https://www.gamedesign.jp/flash/hanafuda/rule_e.html">Hanafuda Rules</a> <br/ >
 (NOTE combinations called Yaku)<br/ >
 
