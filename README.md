@@ -128,7 +128,7 @@ Don't forget to give the project a star! Thanks again!
 Hanafuda or “flower cards” are a style of Japanese playing cards with some Portuguese backgrounds from the mid-16th century.   
 Fun fact Nintendo originally produced handmade hanafuda playing cards in 1889.  
 The system of the deck is different from French-suited or Bavarian pattern decks that makes the card intersting.  
-A Hanafuda deck contains 48 cards in 12 suits, 4 card each suit.  
+A Hanafuda deck contains 48 cards in 12 suits, 4 cards each suit.  
 Suits represented with characteristic flowers of the 12 months, eg. the "march" suit represented with cherry blossom.  
 Each card has a "type" or "value" also, that can be "Plain", "Animal", "Ribbon", "Poetry ribbon", "Blue ribbon" or the most valuable type "Brigth".   
 Not all the suits has all value card which makes the deck asymmetric.  (there are 4 cards per suit, but there are 6 values)  
