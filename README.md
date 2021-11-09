@@ -85,8 +85,8 @@ Cards represented by ```PlayingCard``` class having properties above:
 * a ```label``` (String)
 
 ### Special cards
-All special cards that has unique name or role has an own class (that extends PlayingCard).  
-For example "Full moon" is one of the bright cards and represented with ```FullMoon``` class so you can easily check against that or create it:
+All special cards that have unique name or role has an own class (that extends PlayingCard).  
+For example "Full moon" is one of the bright cards and represented by ```FullMoon``` class so you can easily check against that or create it:
 ```java
 //check if card is a full moon card
 PlayingCard card = new HanafudaDeck().draw();
@@ -111,7 +111,7 @@ See the [open issues](https://github.com/pmamico/hanafuda-lib/issues) for a full
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion that would make this library better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
@@ -129,7 +129,7 @@ Hanafuda or “flower cards” are a style of Japanese playing cards with some P
 Fun fact Nintendo originally produced handmade hanafuda playing cards in 1889.  
 The system of the deck is different from French-suited or Bavarian pattern decks that makes the card intersting.  
 A Hanafuda deck contains 48 cards in 12 suits, 4 cards each suit.  
-Suits represented with characteristic flowers of the 12 months, eg. the "march" suit represented with cherry blossom.  
+Suits represented by characteristic flowers of the 12 months, eg. the "march" suit represented by cherry blossom.  
 Each card has a "type" or "value" also, that can be "Plain", "Animal", "Ribbon", "Poetry ribbon", "Blue ribbon" or the most valuable type "Bright".   
 Not all the suits has all value card which makes the deck asymmetric.  (there are 4 cards per suit, but there are 6 values)  
 For example the February suited cards:  
