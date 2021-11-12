@@ -16,28 +16,28 @@ public class DeckFactory {
         init();
     }
 
-    public static DeckFactory getInstance(){
-        if(instance == null){
+    public static DeckFactory getInstance() {
+        if (instance == null) {
             instance = new DeckFactory();
         }
         return instance;
     }
 
-    public List<PlayingCard> getCards(HanafudaCardSuit suit){
+    public List<PlayingCard> getCards(HanafudaCardSuit suit) {
         return filter(allCards, CardFilter.EQUAL, suit);
     }
 
-    public List<PlayingCard> getCards(HanafudaCardType type){
+    public List<PlayingCard> getCards(HanafudaCardType type) {
         return filter(allCards, CardFilter.EQUAL, type);
     }
 
-    public List<PlayingCard> getCards(){
+    public List<PlayingCard> getCards() {
         return allCards;
     }
 
-    public void init(){
-        if(allCards!=null){
-           return;
+    public void init() {
+        if (allCards != null) {
+            return;
         }
 
         allCards = new ArrayList<>();
@@ -57,18 +57,18 @@ public class DeckFactory {
         allCards.add(new Swallow());
         allCards.add(new WaterIris());
 
-        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.MATSU,  2));
-        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.UME,    2));
+        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.MATSU, 2));
+        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.UME, 2));
         allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.SAKURA, 2));
-        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.FUJI,   2));
-        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.AYAME,  2));
-        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.BOTAN,  2));
-        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.HAGI,   2));
+        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.FUJI, 2));
+        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.AYAME, 2));
+        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.BOTAN, 2));
+        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.HAGI, 2));
         allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.SUZUKI, 2));
-        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.KIKU,   2));
+        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.KIKU, 2));
         allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.MOMIJI, 2));
         allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.YANAGI, 1));
-        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.KIRI,   3));
+        allCards.addAll(PlayingCard.plainCards(HanafudaCardSuit.KIRI, 3));
 
         allCards.add(new PoetryRibbon(HanafudaCardSuit.MATSU));
         allCards.add(new PoetryRibbon(HanafudaCardSuit.UME));
@@ -87,15 +87,10 @@ public class DeckFactory {
         allCards.add(new Ribbon(HanafudaCardSuit.YANAGI));
     }
 
-    public static List<PlayingCard> filter(List<PlayingCard> stack, CardFilter filter, HanafudaCardSuit suit){
+    public static List<PlayingCard> filter(List<PlayingCard> stack, CardFilter filter, HanafudaCardSuit suit) {
         List<PlayingCard> ret = new ArrayList<>();
-        for(PlayingCard card : stack){
-            if (filter.equals(CardFilter.EQUAL) && card.getSuit().equals(suit)
-                    || filter.equals(CardFilter.NOT_EQUAL) && !card.getSuit().equals(suit)
-                    || filter.equals(CardFilter.GREATER) && card.getSuit().compareTo(suit) > 0
-                    || filter.equals(CardFilter.NOT_GREATER) && card.getSuit().compareTo(suit) < 1
-                    || filter.equals(CardFilter.SMALLER) && card.getSuit().compareTo(suit) < 0
-                    || filter.equals(CardFilter.NOT_SMALLER) && card.getSuit().compareTo(suit) > -1) {
+        for (PlayingCard card : stack) {
+            if (filter.apply(suit, card)) {
                 ret.add(card);
             }
         }
@@ -103,15 +98,10 @@ public class DeckFactory {
         return ret;
     }
 
-    public static List<PlayingCard> filter(List<PlayingCard> stack, CardFilter filter, HanafudaCardType type){
+    public static List<PlayingCard> filter(List<PlayingCard> stack, CardFilter filter, HanafudaCardType type) {
         List<PlayingCard> ret = new ArrayList<>();
-        for(PlayingCard card : stack) {
-            if (filter.equals(CardFilter.EQUAL) && card.getType().equals(type)
-                    || filter.equals(CardFilter.NOT_EQUAL) && !card.getType().equals(type)
-                    || filter.equals(CardFilter.GREATER) && card.getType().compareTo(type) > 0
-                    || filter.equals(CardFilter.NOT_GREATER) && card.getType().compareTo(type) < 1
-                    || filter.equals(CardFilter.SMALLER) && card.getType().compareTo(type) < 0
-                    || filter.equals(CardFilter.NOT_SMALLER) && card.getType().compareTo(type) > -1) {
+        for (PlayingCard card : stack) {
+            if (filter.apply(type, card)) {
                 ret.add(card);
             }
         }
